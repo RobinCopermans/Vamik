@@ -68,7 +68,7 @@ body {
    Hero Sectie
    ========================== */
 .hero {
-    background: url('images/img-header.jpg') no-repeat center center/cover;
+    background: url(images/img-header.jpg) no-repeat center center/cover;
     color: white;
     min-height: 100vh;
     position: relative;
