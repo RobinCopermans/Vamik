@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script> <!-- JavaScript bestand -->
+    <title>Vamik Cleaning</title>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-left">
+            <span><i class="fa fa-phone"></i> <a href="tel:+32476355213">+32 476 35 52 13</a></span>
+            <span><i class="fa fa-envelope"></i> <a href="mailto:cs.vamik@hotmail.com">cs.vamik@hotmail.com</a></span>
+        </div>
+        <div class="topbar-right">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+    <!-- Scroll naar boven knop -->
+    <button id="scrollTopBtn">&#8679;</button>
+
+    <!-- Hero Sectie -->
+    <section class="section hero" id="home">
+        <a href="#footer" class="cta-button hero-button">Contacteer ons</a>
+        <h1>Vamik Cleaning</h1>
+        <h2>Professional Cleaning Solutions</h2>
+        <!-- <a href="#diensten" class="scroll-down">&#x25BC;</a> -->
+    </section>
+
+    <!-- Diensten Overzicht -->
+    <section class="section slide-in" id="diensten">
+        <div class="activiteiten">
+            <div class="activiteit">
+                <img src="/images/vamik_bureaus.jpg" alt="Algemene Schoonmaak">
+                <h2>Algemene Schoonmaak</h2>
+                <p>Professionele en grondige reiniging van woningen en kantoren.</p>
+                <a href="#algemene-schoonmaak">Meer info</a>
+            </div>
+            <div class="activiteit">
+                <img src="/images/vamik_grote-ruiten.jpg" alt="Ramenwassen">
+                <h2>Ramenwassen</h2>
+                <p>Streeploze ramen met onze hoogwaardige reinigingstechnieken.</p>
+                <a href="#ramenwassen">Meer info</a>
+            </div>
+            <div class="activiteit">
+                <img src="/images/vamik_zonnepanelen.jpg" alt="Reinigen Zonnepanelen">
+                <h2>Reinigen Zonnepanelen</h2>
+                <p>Optimale energieopbrengst door schone zonnepanelen.</p>
+                <a href="#zonnepanelen">Meer info</a>
+            </div>
+        </div>
+        <!-- <a href="#algemene-schoonmaak" class="scroll-down">&#x25BC;</a> -->
+    </section>
+
+    <!-- Algemene Schoonmaak -->
+    <section class="section activiteit-detail slide-in" id="algemene-schoonmaak">
+        <div class="text-container">
+            <h2>Algemene Schoonmaak</h2>
+            <p>Wij bieden professionele schoonmaakdiensten voor zowel particulieren als bedrijven.</p>
+            <a href="#footer" class="cta-button">Neem contact op</a>
+        </div>
+        <div class="image-container">
+            <img src="/images/img-algemene-reiniging.jpg" alt="Algemene Reiniging">
+        </div>
+        <!-- <a href="#ramenwassen" class="scroll-down">&#x25BC;</a> -->
+    </section>
+
+    <!-- Ramenwassen -->
+    <section class="section activiteit-detail reverse slide-in" id="ramenwassen">
+        <div class="image-container">
+            <img src="/images/img-window-cleaning.jpg" alt="Ramenwassen">
+        </div>
+        <div class="text-container">
+            <h2>Ramenwassen</h2>
+            <p>Wij zorgen voor perfect schone ramen, zowel voor particulieren als bedrijven.</p>
+            <a href="#footer" class="cta-button">Neem contact op</a>
+        </div>
+        <!-- <a href="#zonnepanelen" class="scroll-down">&#x25BC;</a> -->
+    </section>
+
+    <!-- Reinigen Zonnepanelen -->
+    <section class="section activiteit-detail slide-in" id="zonnepanelen">
+        <div class="text-container">
+            <h2>Reinigen Zonnepanelen</h2>
+            <p>Verhoog de efficiëntie van je zonnepanelen door een professionele reiniging.</p>
+            <a href="#footer" class="cta-button">Neem contact op</a>
+        </div>
+        <div class="image-container">
+            <img src="/images/vamik_zonnepanelen.jpg" alt="Reinigen Zonnepanelen">
+        </div>
+        <!-- <a href="#contact" class="scroll-down">&#x25BC;</a> -->
+    </section>
+
+    <!-- Contactformulier -->
+    <section class="section contact slide-in" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Neem contact op</h2>
+                <p>Heb je vragen? Bel of stuur ons een bericht!</p>
+                <p><strong>📞 Telefoon:</strong> <a href="tel:+32476355213">+32 476 35 52 13</a></p>
+                <p><strong>📧 E-mail:</strong> <a href="mailto:cs.vamik@hotmail.com">cs.vamik@hotmail.com</a></p>
+            </div>
+            <div class="contact-form">
+                <h2>Stuur ons een bericht</h2>
+                <form action="#" method="POST">
+                    <label for="naam">Naam *</label>
+                    <input type="text" id="naam" name="naam" required>
+
+                    <label for="bedrijf">Bedrijfsnaam (optioneel)</label>
+                    <input type="text" id="bedrijf" name="bedrijf">
+
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefoon">Telefoonnummer *</label>
+                    <input type="tel" id="telefoon" name="telefoon" required>
+
+                    <label for="bericht">Korte omschrijving *</label>
+                    <textarea id="bericht" name="bericht" rows="4" required></textarea>
+
+                    <button type="submit" class="cta-button">Verstuur</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact</h4>
+                <ul>
+                    <li><strong>VAMIK Cleaning</strong></li>
+                    <li>Guido Gezellelaan 55, 8890 Dadizele</li>
+                    <li>Email: <a href="mailto:cs.vamik@hotmail.com">cs.vamik@hotmail.com</a></li>
+                    <li>Tel: <a href="tel:+32476355213">0476 35 52 13</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Onze diensten</h4>
+                <ul>
+                    <li><a href="#algemene-schoonmaak">Algemene schoonmaak</a></li>
+                    <li><a href="#ramenwassen">Ramenwassen</a></li>
+                    <li><a href="#zonnepanelen">Reinigen zonnepanelen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Volg ons</h4>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p class="copyright">Copyright &copy; 2025 VAMIK Cleaning</p>
+</body>
+</html>
