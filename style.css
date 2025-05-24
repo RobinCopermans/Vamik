@@ -211,7 +211,7 @@ body {
 }
 
 .activiteit-detail:nth-of-type(even) {
-    background-color: ##f8f8f8;
+    background-color: #f8f8f8;
 }
 .activiteit-detail .cta-button {
     padding: 10px 15px;
@@ -364,6 +364,7 @@ body {
     right: 20px;
     padding: 10px 15px;
     background-color: #007BFF;
+    opacity: 0.7;
     color: white;
     border: none;
     border-radius: 50%;
@@ -371,7 +372,7 @@ body {
     cursor: pointer;
     display: none;
     transition: background 0.3s ease;
-    z-index: 1;
+    z-index: 99999;
 }
 
 #scrollTopBtn:hover {
@@ -425,16 +426,33 @@ body {
 @media (max-width: 576px) {
     .topbar {
         flex-direction: column;
-        align-items: flex-start;
-        font-size: 0.8rem;
-        padding: 10px;
+        align-items: center; /* center horizontally */
+        font-size: 0.85rem;   /* slightly bigger font for readability */
+        padding: 10px 15px;  /* smaller horizontal padding */
+        gap: 8px;            /* spacing between rows */
     }
 
     .topbar-left,
     .topbar-right {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+        flex-direction: row;  /* keep items horizontal */
+        justify-content: center; /* center items inside each group */
+        width: 100%;          /* take full width */
+        gap: 12px;            /* space between items */
+        flex-wrap: wrap;      /* wrap if too long */
+    }
+
+    .topbar a {
+        margin-left: 0;       /* reset left margin */
+        padding: 6px 10px;    /* clickable area bigger */
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .topbar a:hover,
+    .topbar a:focus {
+        background-color: #e6f0ff; /* subtle background on hover/focus */
+        color: #007BFF;
+        outline: none;
     }
 
     .hero h1 {
@@ -458,8 +476,18 @@ body {
         gap: 30px;
     }
 
+    .activiteiten {
+        flex-direction: column;
+        padding: 30px 15px;
+        gap: 30px;
+        align-items: center; /* items centreren horizontaal */
+    }
+
     .activiteit {
         max-width: 90%;
+        width: 100%; /* zodat ze niet kleiner zijn dan container */
+        margin: 0 auto; /* horizontaal centreren */
+        box-sizing: border-box;
     }
 
     .activiteit-detail {
@@ -555,35 +583,5 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-@media (max-width: 576px) {
-    .topbar {
-        flex-direction: column;
-        align-items: center; /* center horizontally */
-        font-size: 0.85rem;   /* slightly bigger font for readability */
-        padding: 10px 15px;  /* smaller horizontal padding */
-        gap: 8px;            /* spacing between rows */
-    }
-
-    .topbar-left,
-    .topbar-right {
-        flex-direction: row;  /* keep items horizontal */
-        justify-content: center; /* center items inside each group */
-        width: 100%;          /* take full width */
-        gap: 12px;            /* space between items */
-        flex-wrap: wrap;      /* wrap if too long */
-    }
-
-    .topbar a {
-        margin-left: 0;       /* reset left margin */
-        padding: 6px 10px;    /* clickable area bigger */
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-    }
-
-    .topbar a:hover,
-    .topbar a:focus {
-        background-color: #e6f0ff; /* subtle background on hover/focus */
-        color: #007BFF;
-        outline: none;
-    }
-}
+ 
+    
