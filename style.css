@@ -555,3 +555,35 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+@media (max-width: 576px) {
+    .topbar {
+        flex-direction: column;
+        align-items: center; /* center horizontally */
+        font-size: 0.85rem;   /* slightly bigger font for readability */
+        padding: 10px 15px;  /* smaller horizontal padding */
+        gap: 8px;            /* spacing between rows */
+    }
+
+    .topbar-left,
+    .topbar-right {
+        flex-direction: row;  /* keep items horizontal */
+        justify-content: center; /* center items inside each group */
+        width: 100%;          /* take full width */
+        gap: 12px;            /* space between items */
+        flex-wrap: wrap;      /* wrap if too long */
+    }
+
+    .topbar a {
+        margin-left: 0;       /* reset left margin */
+        padding: 6px 10px;    /* clickable area bigger */
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .topbar a:hover,
+    .topbar a:focus {
+        background-color: #e6f0ff; /* subtle background on hover/focus */
+        color: #007BFF;
+        outline: none;
+    }
+}
